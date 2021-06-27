@@ -10,8 +10,8 @@
 #define LED_PIN_3 2
 #define LED_PIN_4 3
 #define TOGGLE_PIN 8
-#define LEFT_PIN 9
-#define RIGHT_PIN 10
+#define LEFT_PIN 10
+#define RIGHT_PIN 9
 
 #else
 
@@ -117,7 +117,7 @@ void fire(BUTTON_RESULT buttonResult)
     break;
 
   case RIGHT_TOGGLE_OFF:
-    colour = CRGB::Green;
+    colour = CRGB::Red;
     track = 1;
     break;
 
@@ -127,7 +127,7 @@ void fire(BUTTON_RESULT buttonResult)
     break;
 
   default:
-    colour = CRGB::Violet;
+    colour = CRGB::Blue;
     track = 1;
     break;
   }
